@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Skull_Free_Gold_Diffuse
+  m_Shader: {fileID: 4800000, guid: f883622835065174890a6e454d0004e3, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: d7670c73122f8ec4bb292d81ad906b43, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Cube
+      second:
+        m_Texture: {fileID: 8900000, guid: 65a7d442f1932344384c29c6fecc89c6, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Diffuse
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 370d102026b21f04b9b02f373a6a119d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Spec_Gloss_Reflec_Masks
+      second:
+        m_Texture: {fileID: 2800000, guid: 4f49dd892c13f4f45af945b520bd6dc4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _Bounds
+      second: 1
+    - first:
+        name: _Density
+      second: -0.11992537
+    - first:
+        name: _EdgeAlpha
+      second: 0
+    - first:
+        name: _FrezFalloff
+      second: 0.29850742
+    - first:
+        name: _FrezPow
+      second: 1
+    - first:
+        name: _Gloss
+      second: 1
+    - first:
+        name: _Metalics
+      second: 0.6567164
+    - first:
+        name: _RefScale
+      second: 1
+    - first:
+        name: _Reflection
+      second: 0.08955224
+    - first:
+        name: _Shininess
+      second: 0.14388059
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 0.8627451, g: 0.6121254, b: 0.17593232, a: 1}
+    - first:
+        name: _ReflectColor
+      second: {r: 1, g: 1, b: 1, a: 0.5}
+    - first:
+        name: _SpecColor
+      second: {r: 0.9254902, g: 0.74156487, b: 0.34116107, a: 1}
+--- !u!1002 &2100001
+EditorExtensionImpl:
+  serializedVersion: 6
