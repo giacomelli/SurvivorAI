@@ -24,7 +24,6 @@ public class BridgeCarController : MonoBehaviour
         if (m_rb.useGravity && rz >= (-1 * MaxZRotation) && rz <= MaxZRotation && m_lastX != x)
         {
             transform.position += new Vector3(Speed, 0, 0);
-            //m_text.text = rz.ToString();
         }
         else
         {

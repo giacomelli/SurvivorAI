@@ -1,7 +1,5 @@
-﻿using System;
-using SurvivorAI.Domain.Challenges;
+﻿using SurvivorAI.Domain.Challenges;
 using UnityEngine;
-using SurvivorAI.Domain.Challenges.Coast;
 using SurvivorAI.Domain.Challenges.Bridge;
 
 public class BridgeChallengeController : ChallengeControllerBase
@@ -40,62 +38,9 @@ public class BridgeChallengeController : ChallengeControllerBase
                 piece.transform.SetParent(laneGO.transform, false);
 
                 var pieceRb = piece.GetComponent<Rigidbody>();
-
-//                if (i > 0 && i < partsEnabled.Length - 1)
-//                {
-//                    pieceRb.useGravity = true;
-//                    pieceRb.isKinematic = false;
-//                    pieceRb.constraints = RigidbodyConstraints.FreezeRotationZ;    
-//                }
-//
-//                if (lastPieceRb != null && i > 0 && i < partsEnabled.Length)
-//                {
-//                    var joint = piece.AddComponent<HingeJoint>();
-//                    joint.breakForce = 10000;
-//                    //joint.spring = 50;
-//                    joint.connectedBody = lastPieceRb;
-//                }
                
                 lastPieceRb = pieceRb;
             }
         }
-
-//        var survivor2GO = (GameObject)Instantiate(SurvivorPrefab);
-//        survivor2GO.name = survivor.Chromosome.Id;
-//        survivor2GO.SetActive(false);
-//        survivor2GO.transform.position = LastLanePositiion + new Vector3(200, 0, 0);
-//        survivor2GO.GetComponent<BridgeCarController>().InvertSpeed();
-//        survivor2GO.SetActive(true);
-
-        
-
-//        var cubesCount = laneGO.transform.childCount;
-//        var connectionIndexes = survivor.Chromosome.ConnectionIndexes;
-//        var rb = laneGO.GetComponent<Rigidbody>();
-//
-//        for (var i = 0; i < cubesCount; i++)
-//        {
-//            var cube = laneGO.transform.GetChild(i);
-//            Transform nextCube = null;
-//            int nextCubeIndex = connectionIndexes[i];
-//
-//            if (nextCubeIndex != i)
-//            {
-//                nextCube = laneGO.transform.GetChild(nextCubeIndex);
-//            }
-//            else
-//            {
-//                nextCube = laneGO.transform;	
-//            }
-//
-//            var joints = cube.GetComponents<Joint>();
-//            joints[0].connectedBody = rb;
-//            joints[1].connectedBody = nextCube.GetComponent<Rigidbody>();
-//        }
-//
-//        laneGO.GetComponent<Joint>().connectedBody = laneGO.transform.GetChild(0).GetComponent<Rigidbody>();
-
     }
 }
-
-
